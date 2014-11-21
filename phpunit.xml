@@ -1,0 +1,12 @@
+<phpunit colors="true"
+         bootstrap="vendor/photon/photon/src/photon/testbootstrap.php"
+>
+    <testsuites>
+        <testsuite name="Memcached Session Tests for Photon">
+             <directory>vendor/photon/session-memcached/tests/</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <env name="photon.config" value="vendor/photon/session-memcached/config.test.php"/>
+    </php>
+</phpunit>
