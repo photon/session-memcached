@@ -1,7 +1,7 @@
 <?php
 
 use \photon\config\Container as Conf;
-use \photon\tests\sessionTest\SessionHighLevelTestCase;
+use \photon\tests\session\sessionTestCase\SessionHighLevelTestCase;
 
 class SessionMemcachedTest extends SessionHighLevelTestCase
 {
