@@ -1,0 +1,10 @@
+composer.json
+CONTRIBUTORS.md
+.git/
+.gitignore
+.pharignore
+phpunit.xml
+README.md
+tests/
+.travis.yml
+
