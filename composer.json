@@ -1,6 +1,5 @@
 {
     "name": "photon/session-memcached",
-    "version": "1.0.2",
     "type": "library",
     "description": "Memcached session backend.",
     "keywords": [
