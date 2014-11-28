@@ -1,5 +1,6 @@
 composer.json
 CONTRIBUTORS.md
+config.test.php
 .git/
 .gitignore
 .pharignore
