@@ -13,14 +13,8 @@ services:
   - memcached
 
 before_script:
-  - sudo locale-gen fr_FR fr_FR.UTF-8
-  - locale -a  
-  - echo "extension = zmq.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-  - printf "yes\nyes\nno\nyes\n" | pecl install pecl_http
   - echo 'extension = "memcached.so"' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
-  - composer self-update
-  - mkdir test
-  - cd test
+  - ./scripts/travis
   - composer init --no-interaction --stability=dev
   - composer require "photon/session-memcached:dev-master"
   - cp vendor/photon/session-memcached/phpunit.xml .
